@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.gridwrapper {
+  overflow: auto;
+  position: relative;
+  height: 250px;
+}
+
+.gridcontent {
+  width: 8.33%;
+  margin: 0;
+  border-right: 1px solid grey;
+  height: 100%;
+  float: left;
+  background-color: #ffffff;
+}
+
+.topRowContent {
+  @extend .gridcontent;
+  width: 100%;
+  background: #9933cc;
+  border-right-color: transparent;
+}
+
+.quarterRowLeft {
+  background-color: #33b5e5;
+  border: none;
+  width: 100%;
+  height: 15%;
+  margin-bottom: 10px;
+}
+
+.quarterRowLeftUnderlay {
+  @extend .gridcontent;
+  background-color: #ffffff;
+  border: none;
+  width: 25%;
+  padding-top: 15px;
+}
